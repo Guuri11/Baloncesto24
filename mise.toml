@@ -1,0 +1,6 @@
+[tools]
+bun = "1.4.3"
+vp = "1.3.0"
+
+[env]
+DATABASE_URL = "postgres://baloncesto:baloncesto@localhost:5432/baloncesto24"

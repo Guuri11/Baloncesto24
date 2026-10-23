@@ -1,0 +1,29 @@
+{
+  "name": "baloncesto24",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "desarrollo": "bun run --hot src/principal.ts",
+    "test": "vp test",
+    "verificar": "vp check && vp test run",
+    "base:levantar": "docker compose up -d",
+    "base:migrar": "drizzle-kit push",
+    "base:semilla": "bun run src/infraestructura/semilla.ts"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4",
+    "effect": "^4.0.6",
+    "hono": "^4.13.13",
+    "postgres": "^3.4.9",
+    "ts-pattern": "^5.9.2",
+    "type-fest": "^5.10.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.4",
+    "drizzle-kit": "^0.31.11",
+    "typescript": "^7.0.2",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.3.0",
+    "vite-plus": "^1.4.0"
+  }
+}
